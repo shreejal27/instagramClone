@@ -23,6 +23,10 @@
     border: 1px solid white;
 }
 
-.postFoot>span{
+.postFoot{
+    display:flex;
+    justify-content: space-between;
+}
+.postFoot>div> span{
     margin-left:10px;
 }

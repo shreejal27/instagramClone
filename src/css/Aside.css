@@ -6,9 +6,25 @@
     position: sticky;
     height: 100vh; 
     /* height need so that the position sticky is effective */
+    justify-content: space-between;
 }
 
 .title {
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+.asideItem{
+    display: flex;
+    align-items: center;
+}
+
+.asideFoot{
+    display: flex;
+    flex-direction: column;
+}
+
+.asideFootItem{
+    display:flex;
+    align-items: center;
 }

@@ -2,19 +2,40 @@ import React from "react"
 
 import '../css/Aside.css'
 
+import asideData from '../AsideData.js'
+
 export default function Aside() {
+
+    const asideElements = asideData.map((item, index) => {
+        return (
+            <div className="asideItem" key={index}>
+                <span><i class={item.icon}></i> </span>
+                <p>{item.title}</p>
+            </div>
+        )
+    })
+
     return (
         <div className="aside">
+            <div className="asideHead">
                 <p className="title">Instagram</p>
-                <span>Icon Home</span>
-                <span>Icon Search</span>
-                <span>Icon Explore</span>
-                <span>Icon Reels</span>
-                <span>Icon Messages</span>
-                <span>Icon Notification</span>
-                <span>Icon Create</span>
-                <span>Icon Profile</span>
-              
+            </div>
+
+            <div>
+                {asideElements}
+            </div>
+
+            <div className="asideFoot">
+                <div className="asideFootItem">
+                    <span><i class="fa-brands fa-threads fa-xl"></i> </span>
+                    <p>Threads</p>
+                </div>
+                <div className="asideFootItem">
+                    <span><i class="fa-solid fa-bars fa-xl"></i></span>
+                    <p>More</p>
+                </div>
+
+            </div>
         </div>
     )
 }
