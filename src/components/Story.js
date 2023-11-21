@@ -1,10 +1,50 @@
 import React from "react"
+
+import '../css/Story.css'
+
 export default function Story() {
     return (
-        <div>
-            <nav className="nav">
-                <p className="title">This is story </p>
-            </nav>
+        <div className="Story">
+            <div className="storyItem" >
+            <p>Img</p>
+            <p>Name</p>
+            </div>
+            <div className="storyItem">
+            <p>Img</p>
+            <p>Name</p>
+            </div>
+            <div className="storyItem">
+            <p>Img</p>
+            <p>Name</p>
+            </div>
+            <div className="storyItem">
+            <p>Img</p>
+            <p>Name</p>
+            </div>
+            <div className="storyItem">
+            <p>Img</p>
+            <p>Name</p>
+            </div>
+            <div className="storyItem">
+            <p>Img</p>
+            <p>Name</p>
+            </div>
+            <div className="storyItem">
+            <p>Img</p>
+            <p>Name</p>
+            </div>
+            <div className="storyItem">
+            <p>Img</p>
+            <p>Name</p>
+            </div>
+            <div className="storyItem">
+            <p>Img</p>
+            <p>Name</p>
+            </div>
+            <div className="storyItem">
+            <p>Img</p>
+            <p>Name</p>
+            </div>
         </div>
     )
 }

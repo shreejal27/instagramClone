@@ -1,0 +1,28 @@
+.Post{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.postItem{
+    margin-top: 3rem;
+}
+
+.postNav{
+    display: flex;
+}
+
+.postNav>span{
+    padding-left:3px;
+}
+
+.hero{
+    height: 500px;
+    width:500px;
+    border: 1px solid white;
+}
+
+.postFoot>span{
+    margin-left:10px;
+}

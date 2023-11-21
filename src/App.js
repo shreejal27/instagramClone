@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="App">
       <Aside/>
-      <div>
+      <div className='Content'>
       <Story/>
       <Post/>
       </div>

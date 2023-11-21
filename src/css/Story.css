@@ -1,0 +1,7 @@
+.Story{
+    display: flex;
+}
+
+.storyItem{
+    padding-left: 10px;
+}

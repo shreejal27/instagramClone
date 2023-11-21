@@ -1,5 +1,14 @@
-.aside{
+.aside {
     border-right: 1px solid white;
     display: flex;
     flex-direction: column;
+    top: 0;
+    position: sticky;
+    height: 100vh; 
+    /* height need so that the position sticky is effective */
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
