@@ -1,4 +1,28 @@
 .suggestion{
     display: flex;
     flex-direction: column;
+    margin-right: 7rem;
+    /* border: 1px solid white; */
+    min-width: 20rem;
+}
+
+.spaceBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userProfile{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suggestionUserImage{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

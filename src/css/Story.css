@@ -1,7 +1,16 @@
-.Story{
+.Story {
     display: flex;
 }
 
-.storyItem{
+.storyItem {
     padding-left: 10px;
+}
+
+.storyImage {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

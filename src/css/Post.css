@@ -11,16 +11,40 @@
 
 .postNav{
     display: flex;
+    align-items:center;
+    text-align:center;
+    justify-content: space-between;
 }
 
 .postNav>span{
     padding-left:3px;
 }
 
+.postNavContent{
+    margin-left:-19rem;
+}
+
+.postUserProfile{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .hero{
     height: 500px;
     width:500px;
     border: 1px solid white;
+}
+
+.heroPost{
+    width:100%;
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .postFoot{
