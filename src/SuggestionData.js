@@ -22,6 +22,16 @@ export default {
             userImg: "./images/juice.jpg",
             followedBy: "Shree, asdf"
         },
+        {
+            userName: "Wrld",
+            userImg: "./images/juice.jpg",
+            followedBy: "Shree, asdf"
+        },
+        {
+            userName: "Wrld",
+            userImg: "./images/juice.jpg",
+            followedBy: "Shree, asdf"
+        },
     ],
     "suggestionFoot": [
         "About",

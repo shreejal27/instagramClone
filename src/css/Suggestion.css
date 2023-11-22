@@ -1,9 +1,13 @@
 .suggestion {
     display: flex;
     flex-direction: column;
-    margin-right: 7rem;
+    margin-right: 7.5rem;
+    margin-left: 1.2rem;
     /* border: 1px solid white; */
-    min-width: 20rem;
+    /* max-width: 20rem; */
+    min-width: 15rem;
+    font-size: 0.9rem;
+    /* border: 1px solid white; */
 }
 
 .spaceBetween {
@@ -12,34 +16,83 @@
     align-items: center;
 }
 
+.userProfileMain{
+    margin-top: 1.9rem;
+    margin-bottom: 0.5rem;
+}
+
 .userProfile {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.suggestionInfo{
+    font-weight: bold;
+}
+
+.suggestionTitle{
+    font-size: 0.9rem;
+    color: #A8A8A8;
+}
+
+.suggestionSeeAll{
+    font-size: 0.8rem;
+    color: #F5F5F5;
+}
+
+.suggestionItems{
+    margin-top: 0.2rem;
+    margin-bottom: 0.7rem;
+}
+
 .suggestionUserImage {
-    width: 3rem;
-    height: 3rem;
+    width: 2.9rem;
+    height: 2.9rem;
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-right:0.8rem;
 }
 
-/* .suggestionFootElement {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-} */
+.followedBy{
+    font-size: 0.8rem;
+    color: #8F8F8F;
+}
+
+.follow,.switch{
+    color: #0095f6;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
 
 .suggestionsContent{
     justify-content: left;
-    flex-wrap: wrap;   
+    flex-wrap: wrap; 
+    margin-top: 1.2rem;  
+    color: #787878;
+    margin-bottom: 0.7rem;
 }
 
 .suggestionsContentItems{
     display: flex;
+    font-size: 0.77rem;
     /* border: 1px solid white;4 */
+}
+
+.dot{
+    margin: -0.1rem 0.15rem 0rem 0.15rem;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.tradeMark{
+    color: #787878;
+    font-size: 0.8rem;
 }
