@@ -2,11 +2,12 @@
     display: flex;
     justify-content: center;
     /* border:1px solid white; */
-    margin-top: 2rem;
+    margin-top: 1.7rem;
+    margin-left: 3.5rem
 }
 
 .storyItem {
-    padding-left: 10px;
+    margin: 0 0.5rem;
 }
 
 .storyImage {
@@ -16,4 +17,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.storyUserName{
+    font-size: 0.8rem;
+    color: white;
+    margin-top: 0.2rem;
+    text-align: center;
 }

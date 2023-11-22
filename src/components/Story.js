@@ -14,10 +14,12 @@ export default function Story() {
             // Add other styles as needed
           };
         return (
+           
              <div className="storyItem" key={index} >
              <div className="storyImage" style={backgroundImageStyle}></div>
-                <p>{story.userName}</p>
+                <p className="storyUserName">{story.userName}</p>
              </div>
+       
         )
     })
     return (
