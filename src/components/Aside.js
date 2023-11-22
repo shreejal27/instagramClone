@@ -9,7 +9,7 @@ export default function Aside() {
     const asideElements = asideData.map((item, index) => {
         return (
             <div className="asideItem" key={index}>
-                <span><i class={item.icon}></i> </span>
+                <span className="asideIcon"><i class={item.icon}></i> </span>
                 <p>{item.title}</p>
             </div>
         )
@@ -21,17 +21,17 @@ export default function Aside() {
                 <p className="title">Instagram</p>
             </div>
 
-            <div>
+            <div className="asideBody">
                 {asideElements}
             </div>
 
             <div className="asideFoot">
                 <div className="asideFootItem">
-                    <span><i class="fa-brands fa-threads fa-xl"></i> </span>
+                    <span className="asideIcon"><i class="fa-brands fa-threads fa-xl"></i> </span>
                     <p>Threads</p>
                 </div>
                 <div className="asideFootItem">
-                    <span><i class="fa-solid fa-bars fa-xl"></i></span>
+                    <span className="asideIcon"><i class="fa-solid fa-bars fa-xl"></i></span>
                     <p>More</p>
                 </div>
 

@@ -35,7 +35,7 @@ export default function Suggestion() {
         return (
            
                 <div key={index} className="userProfile">
-                    <div className="suggestionsContentItems">{suggestionFoot } <span></span> </div>
+                    <div className="suggestionsContentItems">{suggestionFoot} <span>.</span> </div>
                 </div>
         )
     })

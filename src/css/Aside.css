@@ -7,22 +7,44 @@
     height: 100vh; 
     /* height need so that the position sticky is effective */
     justify-content: space-between;
-    min-width:15rem;
+    min-width:13.5rem;
+    margin-left: 1.5rem;
 }
 
+@font-face {
+    font-family: 'Billabong';
+    src: url('/public/font/Billabong.ttf') format('truetype');
+  }
+
 .title {
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-family: 'Billabong', sans-serif; /* Use 'sans-serif' as a fallback */
+    font-size: 2rem;
+    /* margin-top: 10px; */
+
+}
+
+.asideBody{
+    margin-top: -5.5rem;
 }
 
 .asideItem{
     display: flex;
     align-items: center;
+    margin-bottom: 0.15rem;
+}
+
+.asideIcon{
+    margin-right: 1rem;
+}
+
+.asideIcon>i{
+    font-size:1.4rem;
 }
 
 .asideFoot{
     display: flex;
     flex-direction: column;
+    margin-bottom: 1.3rem;
 }
 
 .asideFootItem{
