@@ -31,6 +31,15 @@ export default function Suggestion() {
         )
     })
 
+    const suggestionFootElement = suggestionData.suggestionFoot.map((suggestionFoot, index) => {
+        return (
+           
+                <div key={index} className="userProfile">
+                    <div className="suggestionsContentItems">{suggestionFoot } <span></span> </div>
+                </div>
+        )
+    })
+
     return (
         <div className="suggestion">
 
@@ -58,6 +67,13 @@ export default function Suggestion() {
 
             {suggestionElement}
 
+            <div className="spaceBetween suggestionsContent">
+            {suggestionFootElement}
+            </div>
+
+            <div className="tradeMark">
+                <p>© 2023 INSTAGRAM FROM META</p>
+            </div>
         </div>
     )
 }

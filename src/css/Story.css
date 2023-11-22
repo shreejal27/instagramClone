@@ -1,5 +1,8 @@
 .Story {
     display: flex;
+    justify-content: center;
+    /* border:1px solid white; */
+    margin-top: 2rem;
 }
 
 .storyItem {

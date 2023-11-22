@@ -22,5 +22,17 @@ export default {
             userImg: "./images/juice.jpg",
             followedBy: "Shree, asdf"
         },
-    ]
+    ],
+    "suggestionFoot": [
+        "About",
+        "Help",
+        "Press",
+        "API",
+        "Jobs",
+        "Privacy",
+        "Terms",
+        "Locations",
+        "Language",
+        "Meta Verified"
+      ]
 }

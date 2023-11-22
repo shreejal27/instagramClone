@@ -6,3 +6,8 @@
   color: #F4F4F4;
   height: auto;
 }
+
+.Content{
+  /* border: 1px solid white; */
+  min-width: 50rem;
+}

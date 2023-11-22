@@ -1,4 +1,4 @@
-.suggestion{
+.suggestion {
     display: flex;
     flex-direction: column;
     margin-right: 7rem;
@@ -6,23 +6,40 @@
     min-width: 20rem;
 }
 
-.spaceBetween{
+.spaceBetween {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.userProfile{
-    display:flex;
+.userProfile {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.suggestionUserImage{
+.suggestionUserImage {
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* .suggestionFootElement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+} */
+
+.suggestionsContent{
+    justify-content: left;
+    flex-wrap: wrap;   
+}
+
+.suggestionsContentItems{
+    display: flex;
+    /* border: 1px solid white;4 */
 }

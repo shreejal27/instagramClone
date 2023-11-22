@@ -1,12 +1,12 @@
 export default[
     {
-        userName: "Shreejal27",
-        time: "3h",
-        profileImg: "./images/juice.jpg",
-        likes: "1,000",
-        comments: "99",
-        caption: "Hello World",
-        hero: "./images/juice.jpg",
+        userName: "rajwi.mdr",
+        time: "1h",
+        profileImg: "./images/raabi.jpeg",
+        likes: "500",
+        comments: "213",
+        caption: "I am the Best !",
+        hero: "./images/raabi.jpeg",
     },
     {
         userName: "Shreejal27",
