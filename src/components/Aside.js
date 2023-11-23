@@ -9,7 +9,9 @@ export default function Aside() {
     const asideElements = asideData.map((item, index) => {
         return (
             <div className="asideItem" key={index}>
-                <span className="asideIcon"><i class={item.icon}></i> </span>
+                <span className="asideIcon">{item.icon ? <i className={item.icon}></i> 
+                :  
+                 <div className="asideUserImage" style={{backgroundImage: `url(${item.profileImg})`}}> </div>}</span>
                 <p>{item.title}</p>
             </div>
         )
@@ -36,6 +38,6 @@ export default function Aside() {
                 </div>
 
             </div>
-        </div>
+        </div >
     )
 }

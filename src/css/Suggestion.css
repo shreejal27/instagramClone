@@ -31,6 +31,9 @@
     font-weight: 600;
 }
 
+.profileName{
+    color: #A8A8A8;
+}
 .suggestionInfo{
     font-weight: bold;
 }
@@ -60,6 +63,10 @@
     margin-right:0.8rem;
 }
 
+.suggestionUserName{
+    font-weight: 600;
+}
+
 .followedBy{
     font-size: 0.8rem;
     color: #8F8F8F;
@@ -83,7 +90,7 @@
 .suggestionsContentItems{
     display: flex;
     font-size: 0.77rem;
-    /* border: 1px solid white;4 */
+    /* border: 1px solid white; */
 }
 
 .dot{
@@ -94,6 +101,15 @@
     display: flex;
     flex-direction: column;
     align-items: left;
+    /* border: 1px solid white; */
+    width: 12rem;
+}
+
+.followedBy{
+    /* width: 100%; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .tradeMark{

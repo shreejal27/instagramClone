@@ -20,7 +20,7 @@ export default function Suggestion() {
                 <div className="userProfile">
                     <div className="suggestionUserImage" style={suggestionImg}> </div>
                     <div className="flexRow">
-                        <span className="userName"> <strong> {suggestion.userName}</strong></span>
+                        <span className="suggestionUserName">  {suggestion.userName}</span>
                         <span className="followedBy">Followed by {suggestion.followedBy}</span>
                     </div>
                 </div>

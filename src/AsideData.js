@@ -29,6 +29,7 @@ export default[
     },
     {
         title: "Profile",
-        icon: "fa-solid fa-circle-user fa-lg"
+        icon: "",
+        profileImg: "./images/profile/s.jpg"
     }
 ]

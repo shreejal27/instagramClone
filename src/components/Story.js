@@ -16,7 +16,9 @@ export default function Story() {
         return (
            
              <div className="storyItem" key={index} >
+                <div className="storyLinearGradient">
              <div className="storyImage" style={backgroundImageStyle}></div>
+                    </div>
                 <p className="storyUserName">{story.userName}</p>
              </div>
        
