@@ -24,8 +24,8 @@
 }
 
 .postUserProfile{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -44,14 +44,20 @@
 
 .postUserName{
     font-weight: 600;
-    margin-left: 0.5rem;
+    margin-left: 0.8rem;
 }
 
 .userNameDot{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 800;
-    margin: -0.6rem 0.3rem 0rem 0.3rem;
+    margin: -0.5rem 0.3rem 0rem 0.2rem;
     color: #A8A8A8;
+}
+
+.verified > img{
+    height: 0.8rem;
+    width: 0.8rem;
+    margin-left: 0.2rem;
 }
 
 .postThreeDots{
