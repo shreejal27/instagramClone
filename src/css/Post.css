@@ -3,40 +3,76 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
+    margin-left: 4rem;
 }
 
 .postItem{
-    margin-top: 3rem;
+    /* border: 1px solid white; */
+    max-width: 30rem;
+    min-width: 30rem;
+    height: auto;
+    margin-top: 1rem;
+    border-bottom: 1px solid #262626;
 }
 
 .postNav{
     display: flex;
-    align-items:center;
-    text-align:center;
+    /* align-items:center; */
     justify-content: space-between;
-}
-
-.postNav>span{
-    padding-left:3px;
-}
-
-.postNavContent{
-    margin-left:-19rem;
+    margin-bottom: 0.7rem;
+    /* border: 1px solid white; */
 }
 
 .postUserProfile{
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* border: 1px solid white; */
 }
 
+.postNavContent{
+    display: flex;
+    align-items: center;
+    /* margin-top: 0.42rem; */
+    /* border: 1px solid white; */
+    margin-right: auto; /* Add this line to align to the left */
+    font-size: 0.9rem;
+}
+
+.postUserName{
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.userNameDot{
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin: -0.6rem 0.3rem 0rem 0.3rem;
+    color: #A8A8A8;
+}
+
+.postThreeDots{
+    margin-top: -0.3rem;
+} 
+
+.postTime{
+    color: #A8A8A8;
+}
+
+.postDot{
+     font-weight: 400;
+     font-size: 1.5rem;
+     margin-left:0.08rem;
+} 
+
 .hero{
-    height: 500px;
-    width:500px;
-    border: 1px solid white;
+    height:30rem;
+    width:30rem;
+    /* border: 1px solid white; */
+   
 }
 
 .heroPost{
@@ -45,12 +81,37 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 0.2rem;
 }
 
 .postFoot{
     display:flex;
     justify-content: space-between;
+    margin-top:1rem;
 }
-.postFoot>div> span{
-    margin-left:10px;
+
+.postFootIconLeft{
+    margin-right:0.8rem;
+}
+
+.postFootContent{
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
+    display:flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+}
+
+.likesCounter{
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+#postUserName{
+    font-weight: 500;
+}
+
+#postComments{
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
 }

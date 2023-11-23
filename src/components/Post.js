@@ -17,40 +17,38 @@ export default function Post() {
                     <div className="postUserProfile" style={backgroundImageStyle}>
                     </div>
                     <div className="postNavContent">
-                        <span>{item.userName}</span>
-                        <span>tick</span>
-                        <span>.</span>
-                        <span>{item.time}</span>
+                        <span className="postUserName">{item.userName}</span>
+                        <span></span>
+                        <span className="userNameDot">.</span>
+                        <span className="postTime">{item.time}</span>
                     </div>
-                    <div>
-                        <span><i class="fa-solid fa-ellipsis-h"></i></span>
+                    <div className="postThreeDots">
+                        <span className="postDot">.</span>
+                        <span className="postDot">.</span>
+                        <span className="postDot">.</span>
                     </div>
                 </div>
                 <div className="hero">
-                <div className="heroPost" style={backgroundImageStyle}>
+                    <div className="heroPost" style={backgroundImageStyle}>
                     </div>
                 </div>
-                <div >
+                <div>
                     <div className="postFoot">
                         <div>
-                            <span><i class="fa-regular fa-heart fa-xl"></i></span>
-                            <span><i class="fa-regular fa-comment fa-flip-horizontal fa-xl"></i></span>
-                            <span><i class="fa-regular fa-paper-plane fa-xl"></i></span>
+                            <span className="postFootIconLeft"><i class="fa-regular fa-heart fa-xl"></i></span>
+                            <span className="postFootIconLeft"><i class="fa-regular fa-comment fa-flip-horizontal fa-xl"></i></span>
+                            <span className="postFootIconLeft"><i class="fa-regular fa-paper-plane fa-xl"></i></span>
                         </div>
                         <div>
-                            <span><i class="fa-regular fa-bookmark fa-xl"></i></span>
+                            <span className="postFootIconRight"><i class="fa-regular fa-bookmark fa-xl"></i></span>
                         </div>
                     </div>
                     <div className="postFootContent">
-                        <p>{item.likes} likes</p>
-                        <div>
-                            <span>{item.userName + " "}</span>
-                            <span>{item.caption}</span>
-                        </div>
-                        <p>View all {item.comments} comments</p>
-                        <p>
-                            Add a comment...
-                        </p>
+                        <span className="likesCounter">{item.likes} likes</span>
+                        <span>
+                            <span id="postUserName">{item.userName + " "} </span>{item.caption}</span>
+                        <span id="postComments">View all {item.comments} comments</span>
+                        <span >Add a comment...</span>
                     </div>
                 </div>
 
