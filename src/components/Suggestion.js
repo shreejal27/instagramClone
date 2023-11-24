@@ -36,7 +36,7 @@ export default function Suggestion() {
 
             <div key={index} className="userProfile">
                 <div className="suggestionsContentItems">
-                    {suggestionFoot} <span className="dot">.</span> 
+                   <span className="suggestionsContentEach">{suggestionFoot}</span>  <span className="dot">.</span> 
                 </div>
             </div>
         )
@@ -63,7 +63,7 @@ export default function Suggestion() {
                     <p>Suggested for you</p>
                 </div>
                 <div className="suggestionSeeAll">
-                    <p>See All</p>
+                    <p className="seeAll">See All</p>
                 </div>
             </div>
 
