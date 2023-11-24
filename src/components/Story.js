@@ -12,21 +12,23 @@ export default function Story() {
             backgroundImage: `url(${story.userImg})`,
             // backgroundColor: "lightblue",
             // Add other styles as needed
-          };
+        };
         return (
-           
-             <div className="storyItem" key={index} >
+
+            <div className="storyItem" key={index} >
                 <div className="storyLinearGradient">
-             <div className="storyImage" style={backgroundImageStyle}></div>
+                    <div className="storyBlank">
+                        <div className="storyImage" style={backgroundImageStyle}></div>
                     </div>
+                </div>
                 <p className="storyUserName">{story.userName}</p>
-             </div>
-       
+            </div>
+
         )
     })
     return (
         <div className="Story">
-           {stories}
+            {stories}
         </div>
     )
 }
