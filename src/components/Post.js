@@ -7,14 +7,18 @@ import PostData from '../PostData.js'
 export default function Post() {
 
     const Posts = PostData.map((item, index) => {
-        const backgroundImageStyle = {
+        const backgroundHeroImageStyle = {
+            backgroundImage: `url(${item.hero})`,
+        };
+
+        const backgroundPostProfileImageStyle = {
             backgroundImage: `url(${item.profileImg})`,
         };
 
         return (
             <div className="postItem" key={index}>
                 <div className="postNav">
-                    <div className="postUserProfile" style={backgroundImageStyle}>
+                    <div className="postUserProfile" style={backgroundPostProfileImageStyle}>
                     </div>
                     <div className="postNavContent">
                         <span className="postUserName">{item.userName}</span>
@@ -32,7 +36,7 @@ export default function Post() {
                     </div>
                 </div>
                 <div className="hero">
-                    <div className="heroPost" style={backgroundImageStyle}>
+                    <div className="heroPost" style={backgroundHeroImageStyle}>
                     </div>
                 </div>
                 <div>

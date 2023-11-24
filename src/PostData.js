@@ -1,12 +1,12 @@
 export default[
     {
-        userName: "rajwi.mdr",
-        time: "1 h",
-        profileImg: "./images/raabi.jpeg",
-        likes: "500",
+        userName: "_rajwiii",
+        time: "94 w",
+        profileImg: "./images/post/profilePic/raabu.jpg",
+        likes: "420",
         comments: "213",
-        caption: "I am the Best !",
-        hero: "./images/raabi.jpeg",
+        caption: "Let's go below zero and hide from the sun I love you forever where we'll have some fun",
+        hero: "./images/post/hero/r.jpg",
         verified: true,
     },
     {
