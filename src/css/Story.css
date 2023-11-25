@@ -1,16 +1,18 @@
 .Story {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     text-align: center;
     margin-top: 1.5rem;
     margin-left: 6.8rem;
     width: 40rem;
+    max-width: 40rem;
     /* border: 1px solid white;  */
 }
 
+
 .storyItem {
-    margin: 0 0.4rem;
+    margin: 0 0.45rem;
 }
 
 .storyLinearGradient {
@@ -61,4 +63,3 @@
     white-space: nowrap;
     cursor: pointer;
 }
-
