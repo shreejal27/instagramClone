@@ -6,12 +6,34 @@ import asideData from '../AsideData.js'
 
 export default function Aside() {
 
-    const dialogOptions = ['Settings', 'Your Activity', 'Saved', 'Switch apperance', 'Report a problem'];
+    const dialogOptions = [
+        {
+            title: "Settings",
+            icon: "fa-solid fa-gear fa-xl"
+        },
+        {
+            title: "Your Activity",
+            icon: "fa-solid fa-chart-line"
+        },
+        {
+            title: "Saved",
+            icon: "fa-solid fa-bookmark"
+        },
+        {
+            title: "Switch apperance",
+            icon: "fa-solid fa-moon"
+        },
+        {
+            title: "Report a problem",
+            icon: "fa-solid fa-triangle-exclamation"
+        },
+    ]
 
     const dialogMenu = dialogOptions.map((item, index) => {
         return (
             <div className="dialogMenuItem">
-            <span key={index}>{item}</span>
+            <span><i className={item.icon}></i></span>
+            <span key={index}>{item.title}</span>
             </div>
         )
     })
@@ -58,6 +80,7 @@ export default function Aside() {
                     <p >More</p>
                 </div>
                 <div id="moreDialog" className="customDialog" onClick={hide}>
+                    <div className="moreDialog">
                        {dialogMenu}
                        <hr/>
                        <div>
@@ -72,6 +95,7 @@ export default function Aside() {
                        </div>
                 </div>
             </div>
+                    </div>
         </div >
     )
 }
