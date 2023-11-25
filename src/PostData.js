@@ -5,7 +5,7 @@ export default[
         profileImg: "./images/post/profilePic/raabu.jpg",
         likes: "420",
         comments: "213",
-        caption: "Let's go below zero and hide from the sun I love you forever where we'll have some fun",
+        caption: "Let's go below zero and hide from the sun I love you forever where we'll have some fun. Let's go below zero and hide from the sun I love you forever where we'll have some fun",
         hero: "./images/post/hero/r.jpg",
         verified: true,
     },

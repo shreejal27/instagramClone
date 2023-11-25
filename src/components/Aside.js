@@ -32,8 +32,8 @@ export default function Aside() {
     const dialogMenu = dialogOptions.map((item, index) => {
         return (
             <div className="dialogMenuItem">
-            <span><i className={item.icon}></i></span>
-            <span key={index}>{item.title}</span>
+                <span><i className={item.icon}></i></span>
+                <span key={index}>{item.title}</span>
             </div>
         )
     })
@@ -49,7 +49,7 @@ export default function Aside() {
         )
     })
 
-    function show(){
+    function show() {
         document.getElementById("moreDialog").style.display = "block"
         console.log("show")
     }
@@ -81,21 +81,21 @@ export default function Aside() {
                 </div>
                 <div id="moreDialog" className="customDialog" onClick={hide}>
                     <div className="moreDialog">
-                       {dialogMenu}
-                       <hr/>
-                       <div>
-                        <span>
-                       Switch Accounts 
-                        </span>
-                       </div>
-                       <div>
-                        <span>
-                      Logout
-                        </span>
-                       </div>
+                        {dialogMenu}
+                        <hr />
+                        <div>
+                            <span>
+                                Switch Accounts
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                Logout
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
-                    </div>
         </div >
     )
 }

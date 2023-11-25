@@ -52,8 +52,9 @@ export default function Post() {
                     </div>
                     <div className="postFootContent">
                         <span className="likesCounter">{item.likes} likes</span>
-                        <span>
-                            <span id="postUserName">{item.userName + " "} </span>{item.caption}</span>
+                        <span className="caption">
+                            <span id="postUserName">{item.userName + " "} </span>{item.caption}
+                            </span>
                         <span id="postComments">View all {item.comments} comments</span>
                         <span >Add a comment...</span>
                     </div>
