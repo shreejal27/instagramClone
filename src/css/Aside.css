@@ -10,6 +10,10 @@
     min-width:15rem;
 }
 
+.asideHead{
+    margin-top:2rem;
+}
+
 @font-face {
     font-family: 'Billabong';
     src: url('/public/font/Billabong.ttf') format('truetype');
@@ -18,13 +22,12 @@
 .title {
     font-family: 'Billabong', sans-serif; /* Use 'sans-serif' as a fallback */
     font-size: 2rem;
-    padding-left: 1.5rem;
-    /* margin-top: 10px; */
-
+    margin-left: 1.5rem;
+    /* border:1px solid white; */
 }
 
 .asideBody{
-    margin-top: -6rem;
+    margin-top: -4rem;
     /* min-width:10rem; */
     margin-left: 1rem;
 }
@@ -37,13 +40,14 @@
     width: 11rem;
     padding-left: 0.7rem;
     padding-right: 2rem;
-    margin-left: -0.4rem;
+    margin-left: -0.2rem;
+    margin-top: 0.1rem;
 }
 
 .asideItem:hover{
     background-color: #1a1a1a;
     border-radius: 0.5rem;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 .asideItem:hover .asideIcon {
@@ -62,7 +66,7 @@
 .asideFoot{
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.5rem;
     padding-left: 1rem;
 }
 
@@ -72,14 +76,14 @@
     width: 11rem;
     padding-left: 0.7rem;
     padding-right: 2rem;
-    margin-left: -0.4rem;
+    margin-left: -0.2rem;
 }
 
 
 .asideFootItem:hover{
     background-color: #1a1a1a;
     border-radius: 0.5rem;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 .asideFootItem:hover .asideIcon {

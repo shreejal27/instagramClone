@@ -24,7 +24,7 @@ export default function Post() {
                         <span className="postUserName">{item.userName}</span>
                         {
                             item.verified &&
-                            <span className="verified"><img src="./images/icon/verified.png"/></span>
+                            <span className="verified"><img src="./images/icon/verified.png" /></span>
                         }
                         <span className="userNameDot">.</span>
                         <span className="postTime">{item.time}</span>

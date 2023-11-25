@@ -20,7 +20,7 @@ export default function Aside() {
     return (
         <div className="aside">
             <div className="asideHead">
-                <p className="title">Instagram</p>
+                <span className="title">Instagram</span>
             </div>
 
             <div className="asideBody">

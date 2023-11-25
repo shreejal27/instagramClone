@@ -27,7 +27,7 @@ export default[
         comments: "13",
         caption: "ululululu",
         hero: "./images/post/hero/l.jpg",
-        verified: false,
+        verified: true,
     },
     {
         userName: "_rajwiii",
