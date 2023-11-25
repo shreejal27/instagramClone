@@ -32,11 +32,14 @@ export default function Suggestion() {
     })
 
     const suggestionFootElement = suggestionData.suggestionFoot.map((suggestionFoot, index) => {
-        return (
 
+        const isLastItem = index === (suggestionData.suggestionFoot.length - 1);
+        
+        return (
             <div key={index} className="userProfile">
                 <div className="suggestionsContentItems">
-                   <span className="suggestionsContentEach">{suggestionFoot}</span>  <span className="dot">.</span> 
+                    <span className="suggestionsContentEach">{suggestionFoot}</span>
+                    {!isLastItem && <span className="dot">.</span>}
                 </div>
             </div>
         )

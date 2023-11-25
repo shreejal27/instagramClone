@@ -1,5 +1,15 @@
 export default[
     {
+        userName: "itsdinkss",
+        time: "10 m",
+        profileImg: "./images/post/profilePic/d.jpg",
+        likes: "420",
+        comments: "213",
+        caption: "Let's go below zero and hide from the sun I love you forever where we'll have some fun",
+        hero: "./images/post/hero/d.jpg",
+        verified: false,
+    },
+    {
         userName: "_rajwiii",
         time: "7 s",
         profileImg: "./images/post/profilePic/raabu.jpg",

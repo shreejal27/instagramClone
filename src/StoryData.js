@@ -1,6 +1,6 @@
 export default[
     {
-        userName: "itsdinksss",
+        userName: "itsdinkss",
         userImg: "./images/story/d.jpg "
     },
     {
