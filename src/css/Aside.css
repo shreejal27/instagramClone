@@ -102,28 +102,83 @@
 }
 
 .customDialog {
-    display: none;
     position: fixed;
-    top: 29rem;
-    left: 10rem;
+    top: 30rem;
+    left: 9.5rem;
     transform: translate(-50%, -50%);
     background-color: #262626;
-    border: 1px solid white;
-    z-index: 1;
+    /* border: 1px solid white; */
+    border-radius: 1rem;
     color: #f5f5f5;
-    height: 27rem;
+    height: 25rem;
     width: 17rem;
-}
-
-.customDialog:target {
-    display: block;
 }
 
 .moreDialog{
     width:100%;
     height: 100%;
-    display: flex;
+    /* border: 1px solid yellow; */
+}
+
+.moreDialogUpper{
+    /* border:1px solid blue; */
+    height: 15.5rem;
+    display:flex;
     flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid yellow;
+}
+
+.horizontalline{
+    width:100%;
+    height: 0.3rem;
+    background-color: #333333;
+    border-color: #333333;
+    border: none;
+}
+
+.dialogMenuItem{
+    /* border:1px solid white; */
+    /* padding-left: 1rem; */
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.4rem;
+    padding: 0.6rem;
+}
+
+.dialogMenuItem:hover{
+    background-color: #3c3c3c;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.dialogMenuIcon{
+    margin-right: 1rem;
+}
+
+.moreDialogLower{
+    /* border: 1px solid red; */
+    height: 7.5rem;
+    display:flex;
+    flex-direction: column;
+}
+
+.dialogMenuLowerItem{
+    /* border:1px solid white; */
+    /* padding-left: 1rem; */
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 0.9rem;
+    padding: 0.6rem;
+}
+
+.dialogMenuLowerItem:hover{
+    background-color: #3c3c3c;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.lowerHorizontalline{
+    width:100%;
+    margin-top: 0.5rem;
+    margin-bottom: 0rem;
+    border-color: #595959;
 }

@@ -9,7 +9,7 @@ export default function Aside() {
     const dialogOptions = [
         {
             title: "Settings",
-            icon: "fa-solid fa-gear fa-xl"
+            icon: "fa-solid fa-gear fa-lg"
         },
         {
             title: "Your Activity",
@@ -32,7 +32,7 @@ export default function Aside() {
     const dialogMenu = dialogOptions.map((item, index) => {
         return (
             <div className="dialogMenuItem">
-                <span><i className={item.icon}></i></span>
+                <span className="dialogMenuIcon"><i className={item.icon}></i></span>
                 <span key={index}>{item.title}</span>
             </div>
         )
@@ -49,16 +49,7 @@ export default function Aside() {
         )
     })
 
-    function show() {
-        document.getElementById("moreDialog").style.display = "block"
-        console.log("show")
-    }
-
-    function hide(e) {
-        if (e.target.id === "moreDialog") {
-            e.target.style.display = "none"
-        }
-    }
+    const [isVisible, setIsVisible] = React.useState(true);
 
     return (
         <div className="aside">
@@ -75,26 +66,37 @@ export default function Aside() {
                     <span className="asideIcon"><i className="fa-brands fa-threads fa-xl"></i> </span>
                     <p>Threads</p>
                 </div>
-                <div className="asideFootItem" onClick={show}>
+                <div className="asideFootItem" onClick={() => setIsVisible(!isVisible)}>
                     <span className="asideIcon"><i className="fa-solid fa-bars fa-xl"></i></span>
                     <p >More</p>
                 </div>
-                <div id="moreDialog" className="customDialog" onClick={hide}>
-                    <div className="moreDialog">
-                        {dialogMenu}
-                        <hr />
-                        <div>
-                            <span>
-                                Switch Accounts
-                            </span>
-                        </div>
-                        <div>
-                            <span>
-                                Logout
-                            </span>
+                {/* <div className="asideFootItem" onClick={() => setIsVisible(!isVisible)}>
+                    <span className="asideIcon"><i className="fa-solid fa-bars fa-xl"></i></span>
+                    <p >More</p>
+                </div> */}
+                {isVisible && (
+                    <div id="moreDialog" className="customDialog" >
+                        <div className="moreDialog" >
+                            <div className="moreDialogUpper">
+                                {dialogMenu}
+                            </div>
+                            <hr className="horizontalline" />
+                            <div className="moreDialogLower">
+                                <div className="dialogMenuLowerItem" >
+                                    <span >
+                                        Switch Accounts
+                                    </span>
+                                </div>
+                                <hr className="lowerHorizontalline"/>
+                                <div className="dialogMenuLowerItem">
+                                    <span>
+                                        Logout
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                )}
             </div>
         </div >
     )
