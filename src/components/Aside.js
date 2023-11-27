@@ -49,7 +49,7 @@ export default function Aside() {
         )
     })
 
-    const [isVisible, setIsVisible] = React.useState(true);
+    const [isVisible, setIsVisible] = React.useState(false);
 
     return (
         <div className="aside">

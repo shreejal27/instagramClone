@@ -6,6 +6,18 @@ import PostData from '../PostData.js'
 
 export default function Post() {
 
+    const [loveCounters, setLoveCounters] = React.useState(PostData.map(() => false));
+    // const [likes, setLikes] = React.useState(PostData[0].likes);
+
+    function LoveCounter(index) {
+        // console.log(index)
+        setLoveCounters(prevCounters => {
+            const newCounters = [...prevCounters];
+            newCounters[index] = !newCounters[index];
+            return newCounters;
+        });
+    }
+
     const Posts = PostData.map((item, index) => {
         const backgroundHeroImageStyle = {
             backgroundImage: `url(${item.hero})`,
@@ -24,7 +36,7 @@ export default function Post() {
                         <span className="postUserName">{item.userName}</span>
                         {
                             item.verified &&
-                            <span className="verified"><img src="./images/icon/verified.png" /></span>
+                            <span className="verified"><img src="./images/icon/verified.png" alt="verified" /></span>
                         }
                         <span className="userNameDot">.</span>
                         <span className="postTime">{item.time}</span>
@@ -42,7 +54,8 @@ export default function Post() {
                 <div>
                     <div className="postFoot">
                         <div>
-                            <span className="postFootIconLeft"><i class="fa-regular fa-heart fa-xl"></i></span>
+                            <span className="postFootIconLeft" onClick={() => LoveCounter(index)}>{
+                                loveCounters[index] ?  <i class="fa-solid fa-heart fa-xl" style={{color: "#ff3040"}}></i> : <i class="fa-regular fa-heart fa-xl"></i>}</span>
                             <span className="postFootIconLeft"><i class="fa-regular fa-comment fa-flip-horizontal fa-xl"></i></span>
                             <span className="postFootIconLeft"><i class="fa-regular fa-paper-plane fa-xl"></i></span>
                         </div>
@@ -54,7 +67,7 @@ export default function Post() {
                         <span className="likesCounter">{item.likes} likes</span>
                         <span className="caption">
                             <span id="postUserName">{item.userName + " "} </span>{item.caption}
-                            </span>
+                        </span>
                         <span id="postComments">View all {item.comments} comments</span>
                         <span >Add a comment...</span>
                     </div>
