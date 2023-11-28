@@ -55,7 +55,7 @@ export default function Post() {
                     <div className="postFoot">
                         <div>
                             <span className="postFootIconLeft" onClick={() => LoveCounter(index)}>{
-                                loveCounters[index] ?  <i class="fa-solid fa-heart fa-xl" style={{color: "#ff3040"}}></i> : <i class="fa-regular fa-heart fa-xl"></i>}</span>
+                                loveCounters[index] ? <i class="fa-solid fa-heart fa-xl" style={{ color: "#ff3040" }}></i> : <i class="fa-regular fa-heart fa-xl"></i>}</span>
                             <span className="postFootIconLeft"><i class="fa-regular fa-comment fa-flip-horizontal fa-xl"></i></span>
                             <span className="postFootIconLeft"><i class="fa-regular fa-paper-plane fa-xl"></i></span>
                         </div>
@@ -65,9 +65,11 @@ export default function Post() {
                     </div>
                     <div className="postFootContent">
                         <span className="likesCounter">{item.likes} likes</span>
-                        <span className="caption" >
-                            <span id="postUserName">{item.userName + " "} </span>{item.caption}
-                        </span>
+                        {item.caption.length > 0 &&
+                            <span className="caption">
+                                <span id="postUserName">{item.userName + " "} </span>{item.caption}
+                            </span>
+                        }
                         <span id="postCommentsCounter">View all {item.comments} comments</span>
                         <span id="postComments">Add a comment...</span>
                     </div>
