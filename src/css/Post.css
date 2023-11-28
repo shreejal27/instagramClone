@@ -79,6 +79,7 @@
     height:35rem;
     width:30rem;
     /* border: 1px solid white; */
+    cursor: pointer;
 }
 
 .heroPost{
@@ -90,7 +91,12 @@
     border-radius: 0.2rem;
 }
 
+.postFooter{
+   cursor: pointer;
+}
+
 .postFoot{
+    /* border: 1px solid white; */
     display:flex;
     justify-content: space-between;
     margin-top:1rem;
@@ -98,6 +104,15 @@
 
 .postFootIconLeft{
     margin-right:0.8rem;
+    
+}
+
+.postFootIconLeft:hover{
+   color: #A8A8A8;
+}
+
+.postFootIconRight:hover{
+    color: #A8A8A8;
 }
 
 .postFootContent{
@@ -117,7 +132,17 @@
     font-weight: 500;
 }
 
-#postComments{
+#postUserName:hover{
+    color: #7c7c7c;
+}
+
+#postCommentsCounter{
     margin-top: 0.4rem;
     margin-bottom: 0.4rem;
+    color: #A8A8A8;
+}
+
+#postComments{
+    color: #A8A8A8;
+    cursor: text;
 }

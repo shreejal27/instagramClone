@@ -51,7 +51,7 @@ export default function Post() {
                     <div className="heroPost" style={backgroundHeroImageStyle}>
                     </div>
                 </div>
-                <div>
+                <div className="postFooter">
                     <div className="postFoot">
                         <div>
                             <span className="postFootIconLeft" onClick={() => LoveCounter(index)}>{
@@ -65,11 +65,11 @@ export default function Post() {
                     </div>
                     <div className="postFootContent">
                         <span className="likesCounter">{item.likes} likes</span>
-                        <span className="caption">
+                        <span className="caption" >
                             <span id="postUserName">{item.userName + " "} </span>{item.caption}
                         </span>
-                        <span id="postComments">View all {item.comments} comments</span>
-                        <span >Add a comment...</span>
+                        <span id="postCommentsCounter">View all {item.comments} comments</span>
+                        <span id="postComments">Add a comment...</span>
                     </div>
                 </div>
 
