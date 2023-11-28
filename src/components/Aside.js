@@ -17,11 +17,11 @@ export default function Aside() {
         },
         {
             title: "Saved",
-            icon: "fa-solid fa-bookmark"
+            icon: "fa-regular fa-bookmark"
         },
         {
             title: "Switch apperance",
-            icon: "fa-solid fa-moon"
+            icon: "fa-regular fa-moon fa-flip-horizontal"
         },
         {
             title: "Report a problem",

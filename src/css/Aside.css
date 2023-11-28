@@ -104,14 +104,14 @@
 .customDialog {
     position: fixed;
     top: 30rem;
-    left: 9.5rem;
+    left: 9rem;
     transform: translate(-50%, -50%);
     background-color: #262626;
     /* border: 1px solid white; */
     border-radius: 1rem;
     color: #f5f5f5;
     height: 25rem;
-    width: 17rem;
+    width: 16rem;
 }
 
 .moreDialog{
@@ -133,6 +133,8 @@
     background-color: #333333;
     border-color: #333333;
     border: none;
+    margin: 0;
+    margin-top: 1rem;
 }
 
 .dialogMenuItem{
@@ -141,7 +143,7 @@
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-top: 0.4rem;
-    padding: 0.6rem;
+    padding: 0.7rem 0.6rem;
 }
 
 .dialogMenuItem:hover{
@@ -177,8 +179,9 @@
 }
 
 .lowerHorizontalline{
+    border: 1px solid #353535;
     width:100%;
     margin-top: 0.5rem;
     margin-bottom: 0rem;
-    border-color: #595959;
+    /* border-color: #4f4e4e; */
 }
