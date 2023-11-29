@@ -78,7 +78,6 @@ export default function Post() {
             </div>
         )
     })
-
     return (
         <div className="Post">
             {Posts}
