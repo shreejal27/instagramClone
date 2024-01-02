@@ -10,6 +10,16 @@ export default[
         verified: true,
     },
     {
+        userName: "pratistha_maskey",
+        time: "1 s",
+        profileImg: "./images/post/profilePic/pari.jpg",
+        likes: "499",
+        comments: "3",
+        caption: "Zindangi ma sikdai chu...",
+        hero: "./images/post/hero/p.jpg",
+        verified: true,
+    },
+    {
         userName: "__yaankaa",
         time: "10 m",
         profileImg: "./images/post/profilePic/ja.jpg",
